@@ -365,7 +365,7 @@ class WorkerBridge(worker_interface.WorkerBridge):
                 print_throttle = time.time()
         
         ba = dict(
-            version=min(self.current_work.value['version'], 2),
+            version=self.current_work.value['version'],
             previous_block=self.current_work.value['previous_block'],
             merkle_link=merkle_link,
             coinb1=packed_gentx[:-self.COINBASE_NONCE_LENGTH-4],
