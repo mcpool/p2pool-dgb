@@ -13,6 +13,6 @@ MIN_TARGET = 0
 MAX_TARGET = 2**256//2**32 - 1
 PERSIST = False
 WORKER_PORT = 5011
-BOOTSTRAP_ADDRS = 'dgbsha.mastercryptopool.net dgbsha2.mastercryptopool.net'.split(' ')
+BOOTSTRAP_ADDRS = 'dgbsha.mastercryptopool.net dgbsha2.mastercryptopool.net dgbsha3.mastercryptopool.net'.split(' ')
 ANNOUNCE_CHANNEL = '#p2pool-alt'
 VERSION_CHECK = lambda v: True
