@@ -1,7 +1,7 @@
 from p2pool.bitcoin import networks
 
 PARENT = networks.nets['digibyteSha']
-SHARE_PERIOD = 15 # seconds target spacing
+SHARE_PERIOD = 10 # seconds target spacing
 CHAIN_LENGTH = 24*60*60//10 # shares
 REAL_CHAIN_LENGTH = 24*60*60//10 # shares
 TARGET_LOOKBEHIND = 50 # shares diff regulation
