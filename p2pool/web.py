@@ -135,8 +135,8 @@ def get_web_root(wb, datadir_path, bitcoind_getinfo_var, stop_event=variable.Eve
         (stale_orphan_shares, stale_doa_shares), shares, _ = wb.get_stale_counts()
 
         miner_last_difficulties = {}
-+        for addr in wb.last_work_shares.value:
-+            miner_last_difficulties[addr] = bitcoin_data.target_to_difficulty(wb.last_work_shares.value[addr].target)
+        for addr in wb.last_work_shares.value:
+            miner_last_difficulties[addr] = bitcoin_data.target_to_difficulty(wb.last_work_shares.value[addr].target)
 
         return dict(
             my_hash_rates_in_last_hour=dict(
