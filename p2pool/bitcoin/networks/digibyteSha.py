@@ -17,7 +17,7 @@ RPC_CHECK = defer.inlineCallbacks(lambda bitcoind: defer.returnValue(
         ))
 SUBSIDY_FUNC = lambda height: __import__('digibyte_subsidy').GetBlockBaseValue(height)
 POW_FUNC=data.hash256
-BLOCK_PERIOD = 30 # s
+BLOCK_PERIOD = 150 # s
 SYMBOL = 'DGB'
 CONF_FILE_FUNC = lambda: os.path.join(os.path.join(os.environ['APPDATA'], 'digibyte') if platform.system() == 'Windows' else os.path.expanduser('~/Library/Application Support/digibyte/') if platform.system() == 'Darwin' else os.path.expanduser('~/.digibyte'), 'digibyte.conf')
 BLOCK_EXPLORER_URL_PREFIX = 'http://digiexplorer.info/block/'
