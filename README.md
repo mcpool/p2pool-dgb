@@ -54,6 +54,10 @@ Requirements:
 In order to run P2Pool with the Litecoin network, you would need to build and install the
 ltc_scrypt module that includes the scrypt proof of work code that Litecoin uses for hashes.
 
+In order to run P2Pool with the Myriad Groestl network, you will need to build and install the 
+groestl_hash module that includes the myriad-groestl proof of work code that Digibyte Groestl uses
+for hashes.
+
 Linux:
 
     cd digibyte_subsidy
