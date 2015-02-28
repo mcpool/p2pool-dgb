@@ -23,7 +23,6 @@ int64_t GetDGBSubsidy(int nHeight) {
                 for(int i = 0; i < weeks; i++)  qSubsidy -= (qSubsidy/200);
         }
         else
-        else
         {
                 int64_t qSubsidy = 2459*COIN;
                 int blocks = nHeight - patchBlockRewardDuration3;
